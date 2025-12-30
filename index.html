@@ -8,12 +8,36 @@
     <style>
         body {
             background-color: red;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        h1 {
+            animation: spin 2s linear infinite;
         }
     </style>
 </head>
 
 <body>
     <h1>Hello World</h1>
+    <p>Why did the developer go broke? Because he used up all his cache! 😂</p>
 </body>
 
 </html>
